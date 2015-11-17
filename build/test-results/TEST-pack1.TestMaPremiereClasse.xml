@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pack1.TestMaPremiereClasse" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-11-17T09:29:57" hostname="p20214" time="3.048">
+<testsuite name="pack1.TestMaPremiereClasse" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-11-17T10:22:19" hostname="p20214" time="3.066">
   <properties/>
-  <testcase name="tesaMethode1" classname="pack1.TestMaPremiereClasse" time="0.005"/>
-  <testcase name="testbGrosTraitement" classname="pack1.TestMaPremiereClasse" time="1.504"/>
-  <testcase name="testcGestionFichier" classname="pack1.TestMaPremiereClasse" time="0.004"/>
-  <testcase name="tesaMethode1" classname="pack1.TestMaPremiereClasse" time="0.003"/>
-  <testcase name="testbGrosTraitement" classname="pack1.TestMaPremiereClasse" time="1.504"/>
-  <testcase name="testcGestionFichier" classname="pack1.TestMaPremiereClasse" time="0.005"/>
+  <testcase name="tesaMethode1" classname="pack1.TestMaPremiereClasse" time="0.006"/>
+  <testcase name="testbGrosTraitement" classname="pack1.TestMaPremiereClasse" time="1.506"/>
+  <testcase name="testcGestionFichier" classname="pack1.TestMaPremiereClasse" time="0.002"/>
+  <testcase name="tesaMethode1" classname="pack1.TestMaPremiereClasse" time="0.006"/>
+  <testcase name="testbGrosTraitement" classname="pack1.TestMaPremiereClasse" time="1.516"/>
+  <testcase name="testcGestionFichier" classname="pack1.TestMaPremiereClasse" time="0.01"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
