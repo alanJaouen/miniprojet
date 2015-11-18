@@ -6,7 +6,7 @@ import org.junit.runners.Suite;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
 	TestMaPremiereClasse.class,
-	TestMaDeuxiemeClasse.class
+	//TestMaDeuxiemeClasse.class
 })
 public class TestSuite {
 

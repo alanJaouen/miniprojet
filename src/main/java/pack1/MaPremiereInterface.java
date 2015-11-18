@@ -5,7 +5,7 @@ import java.io.InputStream;
 public interface MaPremiereInterface {
 	
 	/**
-	 * Methode à tester en premier
+	 * Methode a tester en premier
 	 * @param i
 	 * @throws Exception si i=0
 	 */
