@@ -1,24 +1,43 @@
-package main.java.pack1;
+package pack1;
 
 public class MaPremiereInterface {
-	private Object[] tab;
+	private int[] tab;
 	
-	public MaPremiereInterface()
+	public MaPremiereInterface(int[] tab)
 	{
-		
+		setTab(tab);
 	}
 	
-	public Object[] getTab()
+	public int[] getTab()
 	{
 		return this.tab;
 	}
-	public void setTab(Object[] tab)
+	public void setTab(int[] tab)
 	{
 		this.tab = tab;
 	}
 	
-	public int cherche(Object o)
+	public int cherche(int n)
 	{
-		return 1;
+		boolean trouve = false;
+		int occurences = 0;
+		int taille = tab.length;
+		for (int i = 0; i < taille; i++)
+		{
+			if (i == n)
+			{
+				trouve = true;
+				occurences ++;
+			}
+			else if (trouve == true)
+			{
+				break;
+			}
+		}
+		if (occurences > 0)
+		System.out.println("Trouvé!\nNombre d'occurences: "+occurences);
+		else
+		System.out.println("aucune occurence");
+		return occurences;
 	}
 }
