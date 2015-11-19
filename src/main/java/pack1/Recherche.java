@@ -24,7 +24,7 @@ public class Recherche {
 		int taille = tab.length;
 		for (int i = 0; i < taille; i++)
 		{
-			if (i == n)
+			if (tab[i] == n)
 			{
 				trouve = true;
 				occurences ++;
