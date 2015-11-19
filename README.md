@@ -1,12 +1,3 @@
-# EssaiJUnit
-Download the project
+# MINI PROJET
 
-Unzip the project
-
-use: 
-
-gradle build 
-
-to build the project and launch the tests.
-
-Enjoy ;-)
+ce projet est plutot cool
