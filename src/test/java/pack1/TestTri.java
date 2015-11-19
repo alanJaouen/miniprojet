@@ -9,15 +9,9 @@ import pack1.Tri.TriException;
 
 public class TestTri {
 	
-	
-
-	public TestTri() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 
 	@Test
-	public void testTrier() throws TriException
+	public void testTrier1() throws TriException
 	{	
 		  	Tri i = new Tri();
 		  	
@@ -28,14 +22,24 @@ public class TestTri {
 		  	i.trier();
 		  	Assert.assertArrayEquals(tabbis, i.getTab()); // tab deja trié
 		  	
-		  	
+	}
+	
+	@Test
+	public void testTrier2() throws TriException
+	{	
+		Tri i = new Tri();
+	
 			int[] tab2={6,98,7,0,666};
 			int[] tab2bis={0,6,7,98,666}; 
 			
 		  	i.setTab(tab2);
 		  	i.trier();
 		  	Assert.assertArrayEquals(tab2bis, i.getTab());// non trié
-		  	
+	}
+	@Test
+	public void testTrier3() throws TriException
+	{	
+		Tri i = new Tri();
 		  	boolean t= false;
 		  	
 		  try
@@ -56,7 +60,11 @@ public class TestTri {
 		 {
 			 throw new AssertionError();
 		 }
-	
+	}
+		 @Test
+			public void testTrier4() throws TriException
+			{	
+			 Tri i = new Tri();
 		  	
 			int[] tab4={1,2,3,2,5};
 			int[] tab4bis={1,2,2,3,5};
@@ -65,11 +73,6 @@ public class TestTri {
 		  	i.trier();
 		  	Assert.assertArrayEquals(tab4bis, i.getTab()); // tab avec deux elements identiques
 		  	
-	}
-	
-	public void main() throws Exception{
-		TestTri v= new TestTri();
-		v.testTrier();
 	}
 	
 }

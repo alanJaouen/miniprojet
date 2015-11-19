@@ -30,10 +30,6 @@ public class Tri {
 	public class TriException extends Exception
 	{
 
-		public TriException() {
-			super();
-		}
-
 		public TriException(String arg0) {
 			super(arg0);
 		}

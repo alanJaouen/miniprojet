@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pack1.TestTri" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-11-18T12:02:56" hostname="r10205" time="0.004">
+<testsuite name="pack1.TestTri" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-11-19T09:17:14" hostname="p20121" time="0.039">
   <properties/>
-  <testcase name="testTrier" classname="pack1.TestTri" time="0.004"/>
+  <testcase name="testTrier1" classname="pack1.TestTri" time="0.005"/>
+  <testcase name="testTrier2" classname="pack1.TestTri" time="0.0"/>
+  <testcase name="testTrier3" classname="pack1.TestTri" time="0.0"/>
+  <testcase name="testTrier4" classname="pack1.TestTri" time="0.0"/>
+  <testcase name="testTrier1" classname="pack1.TestTri" time="0.0"/>
+  <testcase name="testTrier2" classname="pack1.TestTri" time="0.0"/>
+  <testcase name="testTrier3" classname="pack1.TestTri" time="0.001"/>
+  <testcase name="testTrier4" classname="pack1.TestTri" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
