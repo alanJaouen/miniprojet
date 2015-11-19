@@ -5,8 +5,8 @@ import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-	TestMaPremiereClasse.class,
-	//TestMaDeuxiemeClasse.class
+	TestTri.class,
+	TestMaPremiereClasse.class
 })
 public class TestSuite {
 

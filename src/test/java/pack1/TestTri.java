@@ -5,6 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Assert;
 import org.junit.Test;
 
+import pack1.Tri.TriException;
+
 public class TestTri {
 	
 	
@@ -15,7 +17,7 @@ public class TestTri {
 	}
 
 	@Test
-	public void testTrier() throws Exception
+	public void testTrier() throws TriException
 	{	
 		  	Tri i = new Tri();
 		  	
@@ -34,6 +36,8 @@ public class TestTri {
 		  	i.trier();
 		  	Assert.assertArrayEquals(tab2bis, i.getTab());// non trié
 		  	
+		  	boolean t= false;
+		  	
 		  try
 		  {
 		  	int[] tab3={};
@@ -42,16 +46,16 @@ public class TestTri {
 			i.setTab(tab3);
 		  	i.trier();
 		  	Assert.assertArrayEquals(tab3bis, i.getTab());// tab vide
-		  	
-		
-	
 			
 		}
-		catch (Exception e)
+		catch (Tri.TriException e)
 		{
-			//e.printStackTrace();
+			t=true;
 		}
-		
+		 if(!t)
+		 {
+			 throw new AssertionError();
+		 }
 	
 		  	
 			int[] tab4={1,2,3,2,5};
@@ -60,14 +64,6 @@ public class TestTri {
 		  	i.setTab(tab4);
 		  	i.trier();
 		  	Assert.assertArrayEquals(tab4bis, i.getTab()); // tab avec deux elements identiques
-	  	
-
-			String[] tab5={maison,chien,fleur,rouge,nuage};
-			String[] tab5bis={chien,fleur,maison,nuage,rouge};
-	
-		  	i.setTab(tab4);
-		  	i.trier();
-		  	Assert.assertArrayEquals(tab4bis, i.getTab());
 		  	
 	}
 	
