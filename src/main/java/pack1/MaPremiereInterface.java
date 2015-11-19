@@ -1,27 +1,24 @@
-package pack1;
+package main.java.pack1;
 
-import java.io.InputStream;
-
-public interface MaPremiereInterface {
+public class MaPremiereInterface {
+	private Object[] tab;
 	
-	/**
-	 * Methode a tester en premier
-	 * @param i
-	 * @throws Exception si i=0
-	 */
-	public void methode1(int i) throws Exception;
+	public MaPremiereInterface()
+	{
+		
+	}
 	
+	public Object[] getTab()
+	{
+		return this.tab;
+	}
+	public void setTab(Object[] tab)
+	{
+		this.tab = tab;
+	}
 	
-	/**
-	 * Ce traitement doit se faire en moins de deux secondes
-	 */
-	public void grosTraitement();
-	
-	/**
-	 * 
-	 * @param inputStream stream vers un fichier
-	 * @return 0 si fonctionne bien
-	 */
-	public int gestionFichier(InputStream inputStream);
-
+	public int cherche(Object o)
+	{
+		return 1;
+	}
 }

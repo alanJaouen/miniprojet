@@ -1,55 +1,37 @@
 package pack1;
 
-import static org.junit.Assert.*;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.FixMethodOrder;
-import org.junit.Test;
-import org.junit.runners.MethodSorters;
-
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TestMaPremiereClasse {
-
-	InputStream fis;
 	MaPremiereInterface i;
+	Integer x;
 	
-	@Test(expected = Exception.class) 
-	public void tesaMethode1() throws Exception{
-		i.methode1(0);
-	}
-	
-	@Test(timeout=2000)
-	public void testbGrosTraitement(){
-		i.grosTraitement();
+	public TestMaPremiereClasse()
+	{
+		Object tab[] = {new Integer(1), new Integer(2), new Integer(3)};
+		x
+		i.setTab(tab);
 	}
 	
-	@Before
-	public void setUp() throws IOException {
-		FileOutputStream fos = new FileOutputStream("Essai.txt");
-		fos.write(0);
-		fos.close();
-		fis = new FileInputStream("Essai.txt");
-		i = new MonImplantation();
+	
+	public boolean testTrouve1()
+	{
+		//si trouve l'element affiche l'element, la case
+		if (i.cherche(new Integer(1)) == new Integer(1)) return true;
+		return false;
 	}
 	
-	@Test
-	public void testcGestionFichier(){
-		int j= i.gestionFichier(fis);
-		assertTrue(j == 0);
+	public boolean testTrouvePas()
+	{
+		//si trouve pas affiche message non trouve
+		if (i.cherche(3) == 0) return true;
+		return false;
 	}
-
-	@After
-	public void tearDown() throws IOException{
-		if(fis != null){
-			fis.close();
-		}
+	
+	public boolean testTrouve2()
+	{
+		//Si trouve plusieurs fois affiche l'element, les cases, le nb d'occurrences
+		if (i.cherche(2) == 2) return true;
+		return false;
 	}
-
+	
 }
