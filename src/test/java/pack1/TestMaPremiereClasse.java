@@ -3,35 +3,30 @@ package pack1;
 
 public class TestMaPremiereClasse {
 	MaPremiereInterface i;
-	Integer x;
 	
 	public TestMaPremiereClasse()
 	{
-		Object tab[] = {new Integer(1), new Integer(2), new Integer(3)};
-		x
-		i.setTab(tab);
+		int tab[] = {1,2,2};
+		i = new MaPremiereInterface(tab);
 	}
 	
 	
-	public boolean testTrouve1()
+	public void testTrouve1() throws Exception
 	{
 		//si trouve l'element affiche l'element, la case
-		if (i.cherche(new Integer(1)) == new Integer(1)) return true;
-		return false;
+		if(i.cherche(1) != 1) throw new Exception(); 
 	}
 	
-	public boolean testTrouvePas()
+	public void testTrouvePas()throws Exception
 	{
 		//si trouve pas affiche message non trouve
-		if (i.cherche(3) == 0) return true;
-		return false;
+		if (i.cherche(3) != 0) throw new Exception();
 	}
 	
-	public boolean testTrouve2()
+	public void testTrouve2()throws Exception
 	{
 		//Si trouve plusieurs fois affiche l'element, les cases, le nb d'occurrences
-		if (i.cherche(2) == 2) return true;
-		return false;
+		if (i.cherche(2) == 2) throw new Exception();
 	}
 	
 }
